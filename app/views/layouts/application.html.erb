@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amazonlab</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<style media="screen">
+    html {
+      margin-left: 30px;
+    }
+</style>
+
+</head>
+<body>
+
+<%# <%= link_to("Contact", contact_path) %>
+
+  <%= link_to("Submit New Product", new_product_path) %> |
+  <%= link_to("All Products", all_products_path) %>
+
+<hr>
+<%= yield %>
+
+</body>
+</html>

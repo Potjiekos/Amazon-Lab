@@ -1,0 +1,12 @@
+<div class="header">
+  <h2>All Products</h2>
+</div>
+<hr>
+
+<% @products.each do |x| %>
+
+  <div>
+    <%= link_to x.title, product_path(x) %>
+  </div>
+
+<% end %>
